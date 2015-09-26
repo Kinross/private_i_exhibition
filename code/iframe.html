@@ -570,6 +570,14 @@
            
                         drawVisualizations();
 
+            var isTouchDevice = 'ontouchstart' in document.documentElement;
+            
+            if (isTouchDevice) {
+                window.onresize = function(event){
+                    window.location.reload(true);
+                };
+            }
+
 
             
             
