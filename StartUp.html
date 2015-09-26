@@ -138,7 +138,15 @@
                 $("<h1>Please open this file in Chrome</h1>").appendTo($("body"));
             }
             
+            if (isTouchDevice) {
             
+                $('body').empty();
+                
+drawVisualizations();
+                
+                
+            }
+                       
             
             // Launch fullscreen for browsers that support it!
             //onclick='launchIntoFullscreen(document.documentElement);' // the whole page
